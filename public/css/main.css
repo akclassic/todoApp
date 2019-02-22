@@ -5,14 +5,28 @@
 }
 
 
-body{
+body {
 	max-width: 60%;
 	margin: 20px auto;
-    background: #36D1DC;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: #36D1DC;
+	/* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #5B86E5, #36D1DC);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+#myDIV h2 {
+	font-size: 4em;
+}
+
+#myDIV input {
+	font-size: 2.5em;
+}
+
+#myDIV span {
+	font-size: 3em;
+}
 
 /* Remove margins and padding from the list */
 ul {
@@ -26,7 +40,7 @@ ul li {
 	position: relative;
 	padding: 12px 8px 12px 40px;
 	background: #eee;
-	font-size: 18px;
+	font-size: 3em;
 	transition: 0.2s;
 	list-style-type: none;
 
@@ -84,8 +98,8 @@ ul li.checked::before {
 /* Style the header */
 .header {
 	background-color: #0064A2;
-    color: white;
-    text-transform: uppercase;
+	color: white;
+	text-transform: uppercase;
 	padding: 30px 40px;
 	text-align: center;
 }
@@ -121,4 +135,24 @@ input {
 
 .addBtn:hover {
 	background-color: #bbb;
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+
+	#myDIV h2 {
+		font-size: 4em;
+	}
+
+	#myDIV input {
+		font-size: 3em;
+	}
+
+	#myDIV span {
+		font-size: 3em;
+	}
+
+	ul li{
+		font-size: 3em;
+	}
+
 }
